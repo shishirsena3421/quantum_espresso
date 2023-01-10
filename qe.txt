@@ -2,7 +2,7 @@ sudo apt-get update
 sudo apt-get install gcc
 sudo apt-get install g++
 Download the quantum espresso file
-Untar it: 
+Untar it: tar -zxvf qe-7.1-ReleasePack.tar.gz
 ./configure --disable-openmp --disable-parallel
 make all
 Add path to .bashrc file
