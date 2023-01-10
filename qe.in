@@ -1,0 +1,11 @@
+1.sudo apt-get update 
+2.sudo apt-get install gcc
+3.sudo apt-get install g++
+4.Download the quantum espresso file
+5.Untar it: 
+6. ./configure --disable-openmp --disable-parallel
+7. make all
+8. add path to .bashrc file
+	PATH = "/home/username/path to QE/bin:$PATH” 
+9. which pw.x
+10 Congratulations, you have successfully installed the Quantum Espresso.
