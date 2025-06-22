@@ -24,3 +24,29 @@ which pw.x
 
 
 Congratulations, you have successfully installed the Quantum Espresso.
+
+
+
+
+
+
+
+#!/bin/bash
+#SBATCH -J qe                               # define the job name
+#SBATCH -o qe.%j.out                        # define stdout & stderr output files
+#SBATCH -e qe.%j.err
+#SBATCH -N 1                                # request 4 nodes
+#SBATCH -n 8                           # 256 total tasks = 64 tasks/node
+#SBATCH -p development                           # submit to "normal" queue
+#SBATCH -t 0:05:00                          # run for 4 hours max
+#SBATCH -A CHE21028
+
+
+module load        intel/19.1.1
+module load   impi/19.0.9
+module load qe
+
+#module load qe/6.2                        # setup environment
+
+
+ibrun bands.x -inp bandx.in > bandx.out
