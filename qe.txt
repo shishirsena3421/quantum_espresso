@@ -1,3 +1,14 @@
+ibrun  -np 4 bands.x -npool 1 -input bandx.in > bandx.out
+
+
+
+
+
+
+
+
+
+
 sudo apt-get update 
 sudo apt-get install gcc
 sudo apt-get install g++
